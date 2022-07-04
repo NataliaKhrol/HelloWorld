@@ -79,15 +79,11 @@ public class Computer {
         }
     }
 
-    public boolean isBroken () {
-       return isBroken;
-
-
-        }
-    }
+}
 
 
 
-// public boolean get() {
+
+
 
 
