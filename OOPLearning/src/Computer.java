@@ -2,10 +2,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Computer {
-    String cpu;
-    int ram;
-    int hdd;
-    int onOffLimit;
+    private String cpu;
+    private int ram;
+    private int hdd;
+    private int onOffLimit;
+
     boolean isPowered;
     boolean isBroken = false;
     int onOffCounter;
@@ -33,7 +34,6 @@ public class Computer {
             System.err.println("The comp is broken and can't be switched on");
             return;
         }
-
         if (onOffCounter >= onOffLimit) {
             isBroken = true;
             System.err.println("Over the limit, the comp is fried");
@@ -62,6 +62,7 @@ public class Computer {
         }
     }
 
+
     public void switchOff() {
         Random random = new Random();
         int correctAnswer = random.nextInt(0, 2);
@@ -78,4 +79,15 @@ public class Computer {
         }
     }
 
-}
+    public boolean isBroken () {
+       return isBroken;
+
+
+        }
+    }
+
+
+
+// public boolean get() {
+
+
