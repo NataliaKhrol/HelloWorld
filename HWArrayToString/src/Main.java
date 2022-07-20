@@ -53,7 +53,6 @@ public class Main {
         studentList.add(String.valueOf(student3.getName()));
         //  System.out.println(studentList.size());
         int rating = (sum + sum2 + sum3) / studentList.size();
-        //System.out.println(rating);
 
         University university = new University("Harvard", studentList, rating);
         university.printInfoUniversity();
