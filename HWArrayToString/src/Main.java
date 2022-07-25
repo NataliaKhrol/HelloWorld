@@ -3,7 +3,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
+        
+        int count = 0;
         List<Integer> markList = new ArrayList<>();
         markList.add(5);
         markList.add(5);
@@ -16,7 +17,8 @@ public class Main {
             sum += i;
 
         }
-        System.out.println("Îáùèé áàëë - " + sum);
+        count = count + sum;
+        System.out.println("ÃÃ¡Ã¹Ã¨Ã© Ã¡Ã Ã«Ã« - " + sum);
 
 
         List<Integer> markList2 = new ArrayList<>();
@@ -31,7 +33,8 @@ public class Main {
             sum2 += i;
 
         }
-        System.out.println("Îáùèé áàëë - " + sum2);
+        count = count + sum2;
+        System.out.println("ÃÃ¡Ã¹Ã¨Ã© Ã¡Ã Ã«Ã« - " + sum2);
 
         List<Integer> marklist3 = new ArrayList<>();
         marklist3.add(9);
@@ -45,14 +48,15 @@ public class Main {
             sum3 += i;
 
         }
-        System.out.println("Îáùèé áàëë - " + sum3);
+        count = count + sum3;
+        System.out.println("ÃÃ¡Ã¹Ã¨Ã© Ã¡Ã Ã«Ã« - " + sum3);
 
         List<String> studentList = new ArrayList<>();
         studentList.add(String.valueOf(student1.getName()));
         studentList.add(String.valueOf(student2.getName()));
         studentList.add(String.valueOf(student3.getName()));
         //  System.out.println(studentList.size());
-        int rating = (sum + sum2 + sum3) / studentList.size();
+        int rating = (count / studentList.size());
 
         University university = new University("Harvard", studentList, rating);
         university.printInfoUniversity();
